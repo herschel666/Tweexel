@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8813C21928566AF5003B0F81 /* svg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8813C21828566AF5003B0F81 /* svg.swift */; };
 		882ABC3C28525C2400449E6B /* tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882ABC3B28525C2400449E6B /* tile.swift */; };
 		882ABC3E28525C4C00449E6B /* size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882ABC3D28525C4C00449E6B /* size.swift */; };
 		882ABC40285272F400449E6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882ABC3F285272F400449E6B /* AppDelegate.swift */; };
 		882ABC422852752700449E6B /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882ABC412852752700449E6B /* WindowController.swift */; };
+		88C53F4C2855E5C300CDA89C /* (null) in Sources */ = {isa = PBXBuildFile; };
 		88ECE08D284FD32500F26C57 /* TweexelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ECE08C284FD32500F26C57 /* TweexelApp.swift */; };
 		88ECE08F284FD32500F26C57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ECE08E284FD32500F26C57 /* ContentView.swift */; };
 		88ECE091284FD32800F26C57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88ECE090284FD32800F26C57 /* Assets.xcassets */; };
@@ -19,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8813C21828566AF5003B0F81 /* svg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = svg.swift; sourceTree = "<group>"; };
 		882ABC3B28525C2400449E6B /* tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tile.swift; sourceTree = "<group>"; };
 		882ABC3D28525C4C00449E6B /* size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = size.swift; sourceTree = "<group>"; };
 		882ABC3F285272F400449E6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +65,7 @@
 		88ECE08B284FD32500F26C57 /* Tweexel */ = {
 			isa = PBXGroup;
 			children = (
+				8813C21828566AF5003B0F81 /* svg.swift */,
 				88ECE08C284FD32500F26C57 /* TweexelApp.swift */,
 				88ECE08E284FD32500F26C57 /* ContentView.swift */,
 				88ECE090284FD32800F26C57 /* Assets.xcassets */,
@@ -155,9 +159,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				882ABC40285272F400449E6B /* AppDelegate.swift in Sources */,
+				8813C21928566AF5003B0F81 /* svg.swift in Sources */,
 				88ECE08F284FD32500F26C57 /* ContentView.swift in Sources */,
 				88FB7BA72851317C00F67996 /* Color+Extension.swift in Sources */,
 				882ABC422852752700449E6B /* WindowController.swift in Sources */,
+				88C53F4C2855E5C300CDA89C /* (null) in Sources */,
 				88ECE08D284FD32500F26C57 /* TweexelApp.swift in Sources */,
 				882ABC3E28525C4C00449E6B /* size.swift in Sources */,
 				882ABC3C28525C2400449E6B /* tile.swift in Sources */,

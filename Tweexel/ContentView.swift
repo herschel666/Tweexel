@@ -92,6 +92,13 @@ struct ContentView: View {
 
                 Spacer()
 
+                Button("Export SVG") {
+                    toSVG()
+                }
+                .padding()
+
+                Spacer()
+
                 Button("Copy") {
                     copyTiles()
                 }
@@ -157,6 +164,34 @@ struct ContentView: View {
 
         NSPasteboard.general.declareTypes([.string], owner: nil)
         NSPasteboard.general.setString(result, forType: .string)
+    }
+
+    func toSVG() -> Void {
+        let svg = SVG(width: currentSize.width, tiles).toString()
+        let savePanel = NSSavePanel()
+
+        savePanel.allowedFileTypes = ["svg"]
+        savePanel.canCreateDirectories = true
+        savePanel.isExtensionHidden = false
+        savePanel.allowsOtherFileTypes = false
+        savePanel.title = "Save your image"
+        savePanel.message = "Choose a folder and a name to store your image."
+        savePanel.nameFieldLabel = "File name:"
+
+        if savePanel.runModal() == .OK {
+            if let fileUrl = savePanel.url {
+                do {
+                    try svg.write(to: fileUrl, atomically: false, encoding: .utf8)
+                }
+                catch {
+                    print("Could not save file")
+                    // TODO: give feedback to user
+                }
+            }
+        } else {
+            // so sad...
+            // TODO: give feedback to user
+        }
     }
 }
 
